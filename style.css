@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin:0;
+   
+}
+
+body{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    padding: 50px;
+}
+.section-one{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.section-one__contact{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;/*contanct under one line is not good look so use text decoration is none*/
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    /* before display property contact and web developer will stick to it(touch with each) so will check display property and will give inline-block*/
+}
+.section-one__name{
+    font-size: 60px;
+}
+
+.section-one__role{
+    font-size: 30px;
+    margin-top: 1opx;
+}
+.section-two, .section-three, .section-four, .section-five {
+    margin-top: 20px;
+}
+
+.section-two__desc, .section-three__desc, .section-four__desc, .section-five__desc {
+    margin-top: 10px;
+}
+.section-five{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.section-five__title a{
+    /*title a (title space a means) title inside anchor tag we denote like that.. */
+    color: skyblue;
+}
+
+.section-three li, .section-four li {
+    list-style: none;
+}
+.section-three{
+    background-color: #6462FD;
+    color: black;
+    padding: 25px;
+    display: inline-block;
+    height: 200px;
+    border-radius: 10px;
+    vertical-align: top;
+    /* vertical top means both inline blocks arrange at same height for use this allingment is wrong
+    For example, it could be used to vertically position an image in a line of text. 
+    To vertically align the content of a cell in a table it means section-three slightly in bottom so use vertical-top means 
+    section-three, four in same order.*/
+}
+
+.section-four{
+    background-color: #FE7517;
+    color: black;
+    padding: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 1100px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+.contact-form{
+    margin-top: 20px;
+}
+
+.contact-form__input, .contact-form__textarea, .contact-form__submit{
+    margin-top: 10px;
+}
+
+.contact-form__input{
+    padding: 10px;
+    border: none;
+    border-bottom: solid black 1px;
+}
+
+.contact-form__textarea{
+    padding: 10px;
+    border: none;
+    border: solid black 1px;
+}
+
+.contact-form__submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: orangered;
+    color: black;
+    border:none;
+}
+
+@media (max-width: 990px) {
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-four{
+        width:unset;
+        height: auto;
+    }
+}
+
+@media (max-width:600px){
+    .section-one__name{
+        font-size: 30px;
+    }
+    
+    .section-one__role{
+        font-size: 15px;
+        
+    }
+
+}
+
+
+
+
+
